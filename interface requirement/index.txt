@@ -1,0 +1,24 @@
+index：（index内的所有接口前缀为 index）
+ 
+/getFile （获取对应类型的文件)
+请求类型：get
+参数：type (类型有 all【全部类型的文件，包括doc,img,video,radio】,trash【回收站的文件】,doc【文档类型】,img【图片类型】,video【视频类型】,radio【音频类型】coffer【保险箱的文件】）
+返回文件列表（每个文件有type【类型】,name【文件名】,size【文件大小】,file【文件】,date【文件存入日期】属性）
+
+/getFileByTime (将文件按时间排序，最近日期在最前)
+请求类型：get 
+参数：type
+返回文件列表（每个文件有type【类型】,name【文件名】,size【文件大小】,file【文件】,date【文件存入日期】属性）
+
+/upfile (上传文件  前端使用formdate进行文件上传)
+请求类型：post
+无参数
+成功返回： ok
+失败返回： no 
+
+/fileDownload (文件下载)
+请求类型：post
+参数：文件类型 type 文件名 filename
+成功返回： ok
+失败返回： no
+

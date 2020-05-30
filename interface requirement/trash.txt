@@ -1,0 +1,18 @@
+trash下的请求：
+/deleteFile （在回收站内彻底删除选中文件）
+请求类型：get 
+参数：filename   type（文件类型:类型有 img，doc,video,radio）
+成功返回： ok 
+失败返回： no 
+
+/gotoTrash （放入回收站，不彻底删除）
+请求类型：get 
+参数：filename   type
+成功返回：ok
+失败返回：no
+
+/huifu （恢复回收站的某个文件）
+请求类型：get 
+参数：filename   type
+成功返回： ok
+失败返回： no 

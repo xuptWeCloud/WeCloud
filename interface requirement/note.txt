@@ -1,0 +1,24 @@
+note：（index内的所有接口前缀为 note）
+ 
+/delNote （删除相应笔记)
+请求类型：get
+参数：file_id (笔记的索引序号）
+返回新的文件列表（笔记文件有name【文件名】,content【文件内容】,date【文件存入日期】属性）
+
+/getList (获得笔记列表)
+请求类型：get 
+参数：无
+返回文件列表（笔记文件有file_id【文件索引】title【文件名】,content【文件内容】,date【文件存入日期】属性）
+
+/insertNote (存储笔记，修改笔记)
+请求类型：get
+参数: file_id【文件索引】title【文件名】,content【文件内容】,date【文件存入日期】属性 
+成功返回： 文件列表（笔记文件有file_id【文件索引】title【文件名】,content【文件内容】,date【文件存入日期】属性）
+
+
+/getNote（获取某篇笔记  根据唯一索引id）
+请求类型：get
+参数：file_id【文件索引】
+返回： content【文件内容】
+
+

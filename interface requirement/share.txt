@@ -1,0 +1,23 @@
+share情况下的请求：
+（前端传参方式都是raw方式发送）
+sharefile/test
+
+sharefile/ShareToFile（在前端界面处选中一些资源 之后点击共享 资源类型是一致的）
+请求类型：post 
+参数：fileids(要共享的文件的id形成列表 如:{"fileids":[1,2,3]}) 
+      type(文件类型:类型有 img，doc,video,radio）
+      userid
+成功返回：ok response的data->shareno（提取码）  
+失败返回：no
+
+sharefile/ShareShowFile(在前端填写共享码 点击查看共享按钮)
+请求类型: get
+参数：shareno （链接中？shareno=...传参)
+成功返回：ok response.data->share_list
+失败返回: no  
+
+sharefile/ShareSaveFile(选择要接收文件 点击确认接收)
+请求类型: post
+参数：type shareno userid(当前登录的用户的id) fileid（同样列表） 
+成功返回：ok
+失败返回: no   

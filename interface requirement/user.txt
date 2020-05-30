@@ -1,0 +1,45 @@
+user：（user内的所有接口前缀为 user）
+ 
+/login
+请求类型：get 
+参数：username   password
+成功返回： ok 
+失败返回： no 
+
+/isLog （验证是否登陆）
+请求类型：get 
+无参数
+成功返回：ok
+	username
+	size(各类文件的总数量)（文件类型有 img，doc,video,radio）
+失败返回：res : no
+
+/outLogin （退出登录）
+请求类型：get 
+无参数
+成功返回： ok
+失败返回： no 
+
+/reg (注册)
+请求类型：get 
+参数：username  password  email
+成功返回： ok
+失败返回： no 
+
+/checkusername (检查用户名是否被注册)
+请求类型：get 
+参数：username
+成功返回： ok
+失败返回： no 
+
+/checkemail （检查邮箱是否被注册）
+请求类型：get 
+参数：email
+成功返回： ok
+失败返回： no 
+
+/checkPassword(进入保险箱时验证密码）
+请求类型：get 
+参数：password
+成功返回： ok
+失败返回： no 

@@ -1,0 +1,15 @@
+coffer：（coffer内的所有接口前缀为 coffer）
+ 
+/insertCoffer （向保险箱添加文件)
+请求类型：get
+参数：文件类型 type 文件名 filename
+返回文件列表（每个文件有type【类型】,name【文件名】,size【文件大小】,file【文件】,date【文件存入日期】属性）
+成功返回： ok
+失败返回： no 
+/restore (移出保险箱)
+请求类型：get 
+参数：文件类型 type 文件名 filename
+成功返回： ok
+失败返回： no
+
+
